@@ -1,0 +1,7 @@
+from(bucket: "sailgp")
+  |> range(start: {start_time}, stop: {stop_time})
+  |> filter(fn: (r) => r["boat"] == "{boat}")
+  |> filter(fn: (r) => r._field =~ {REGEX})
+  |> keep(columns: ["_time", "_value", "_field", "_measurement", "boat"])
+  |> group(columns: ["_time"])
+  |> last()
