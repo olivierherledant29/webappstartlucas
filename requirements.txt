@@ -60,6 +60,7 @@ tornado==6.5.2
 typing_extensions==4.15.0
 tzdata==2025.2
 urllib3==2.1.0
+utm==0.7.0
 watchdog==6.0.0
 Werkzeug==3.0.1
 zipp==3.17.0
