@@ -47,13 +47,16 @@ practice_mode = st.checkbox("Practice mode")
 
 run_button = st.button("Run analysis")
 
-
+#URL = "https://data.sailgp.tech"
+#ORG = "0c2a130d50b8facc"
+#TOKEN = "2vTlG__z6bc7bibptc1FE_gXRwK6761dmxW_sasiAC1qsNqwbAbAj0PJD9yRIQPR0bfwdl_4-S_5gIecgkfz_Q=="
+#BUCKET = "sailgp"
 
 if run_button:
 
     client = InfluxDBClient(
         url="https://data.sailgp.tech",
-        token="TON_TOKEN_ICI",
+        token="2vTlG__z6bc7bibptc1FE_gXRwK6761dmxW_sasiAC1qsNqwbAbAj0PJD9yRIQPR0bfwdl_4-S_5gIecgkfz_Q==",
         org="0c2a130d50b8facc",
         verify_ssl=False
     )
